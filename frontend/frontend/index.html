@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CPU Algorithm Visualizer V1.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="title-box">
+  <h1 class="title">CPU Algorithm Visualizer V1.0</h1>
+</div>
+
+<p class="subtitle">Select Algorithm</p>
+
+<div class="slider">
+  <div class="panel" onclick="choose('FCFS')">
+    <h2>FCFS</h2>
+    <p>A scheduling algorithm where processes are executed in arrival order</p>
+  </div>
+
+  <div class="panel" onclick="choose('SJF')">
+    <h2>SJF</h2>
+    <p>Selects the process with the smallest execution time</p>
+  </div>
+
+  <div class="panel" onclick="choose('LJF')">
+    <h2>LJF</h2>
+    <p>Selects the process with the longest execution time first</p>
+  </div>
+
+  <div class="panel" onclick="choose('RR')">
+    <h2>Round Robin</h2>
+    <p>Each process gets a fixed time quantum in rotation</p>
+  </div>
+</div>
+
+<script>
+function choose(algo) {
+  localStorage.setItem("algo", algo);
+  window.location.href = "main.html";
+}
+</script>
+
+</body>
+</html>

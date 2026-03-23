@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CPU Algorithm Visualizer V1.0</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="title-box">
+  <h1 class="title">CPU Algorithm Visualizer V1.0</h1>
+</div>
+
+<p class="selected">Selected: <b id="selected">FCFS</b></p>
+
+<div class="right">
+  <button class="reset-btn" onclick="resetAll()">Go with Another Algorithm</button>
+</div>
+
+<div id="tqBox" style="display:none;">
+  Time Quantum:
+  <input id="tq" type="number" value="2" min="1">
+</div>
+
+<div class="box">
+  <h3>Process Input</h3>
+
+  <table id="inputTable">
+    <thead>
+      <tr>
+        <th>Process</th>
+        <th>Arrival Time</th>
+        <th>Burst Time</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="inputs"></tbody>
+  </table>
+
+  <button onclick="addProcess()">+ Add Process</button>
+  <button class="run-btn" onclick="run()">Run Algorithm</button>
+</div>
+
+<div class="box">
+  <h3>Results</h3>
+  <div id="table"></div>
+</div>
+
+<div class="box">
+  <h3>Gantt Chart</h3>
+  <div id="gantt"></div>
+</div>
+
+<div class="box">
+  <h3>Metrics</h3>
+  <div id="metrics"></div>
+</div>
+
+<div class="box">
+  <h3>Comparison</h3>
+  <canvas id="chart"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

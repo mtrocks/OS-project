@@ -1,0 +1,163 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6fb;
+  padding: 30px;
+  text-align: center;
+}
+
+.title {
+  font-size: 34px;
+}
+
+.title-box {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #4f8cff;
+  border-radius: 15px;
+  background: white;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.title-box:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #08378f, #3c85f3);
+
+}
+
+.title-box:hover .title {
+  color: white;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.slider {
+  display: flex;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(135deg, #a8c5fb, #8ebbff);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.panel p {
+  opacity: 0;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.panel:hover {
+  flex: 2;
+  background: linear-gradient(135deg, #063181, #3e86f1);
+  color: white;
+}
+
+.panel:hover p {
+  opacity: 1;
+  color: #eaeaea;
+}
+
+.box {
+  background: white;
+  padding: 18px;
+  margin: 15px 0;
+  border-radius: 12px;
+}
+
+button {
+  margin: 5px;
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #4f8cff;
+  color: white;
+  cursor: pointer;
+}
+
+.run-btn {
+  background: #28a745;
+}
+
+.reset-btn {
+  background: #111d89;
+}
+
+.delete-btn {
+  background: #dc3545;
+}
+
+.right {
+  text-align: right;
+}
+
+#tqBox {
+  padding: 10px 15px;
+  border: 2px solid #4f8cff;
+  border-radius: 12px;
+  background: white;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+#tq {
+  border-radius: 8px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  width: 60px;
+  text-align: center;
+}
+
+#inputTable th {
+  background: #4f8cff;
+  color: white;
+}
+
+#inputTable td, #inputTable th {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+#inputTable input {
+  width: 80px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #4f8cff;
+  color: white;
+}
+
+td, th {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.gantt-box {
+  display: inline-block;
+  padding: 10px;
+  margin: 4px;
+  background: #4f8cff;
+  color: white;
+  border-radius: 6px;
+}
